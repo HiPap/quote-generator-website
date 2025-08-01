@@ -25,7 +25,7 @@ This was my first hands-on experience with web development. The goal was to:
 ## 📸 Screenshot
 
 ![Screenshot of Quote Generator Website](screenshot.png)
-!(Screenshot of the Lists Section(lists.png)
+![Screenshot of the Lists Section](lists.png)
 
 
 ## 📂 How to Use
