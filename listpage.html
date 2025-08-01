@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Page</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <h1 id="ListTitle">
+            List of Quotes
+        </h1>
+        <table id="sigma_table">
+            <tr>
+                <th>Generated quotes</th>
+            </tr>
+        </table>
+        <button onclick="switch_scene()">Back</button>
+        <button onclick="delete_history()">Delete Saved Quotes</button>
+        <script>
+            function switch_scene(){
+                window.location.href = "index.html"
+            }
+            const storedQuotes = JSON.parse(localStorage.getItem("quoteHistory")) || [];
+            const table = document.getElementById("sigma_table");
+
+             storedQuotes.forEach(quote => {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+                cell.textContent = quote;
+                row.appendChild(cell);
+                table.appendChild(row);
+    });
+        </script>
+        <script>
+           function delete_history(){
+            localStorage.removeItem("quoteHistory");
+            location.reload();
+           } 
+        </script>
+    </body>
+</html>

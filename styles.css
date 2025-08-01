@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#quote {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.ListButton {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.ListButton:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.05);
+}
+
+.ListButton:active {
+    transform: scale(0.95);
+}
+
+.ListTitle{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+
+}
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #quote {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+
+/* list page CSS */
+#sigma_table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#sigma_table th, 
+#sigma_table td {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.2em;
+}
+
+#sigma_table th {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    color: #fff;
+}
+
+#sigma_table td {
+    color: #f0f0f0;
+}
+
+#sigma_table tr:last-child td {
+    border-bottom: none;
+}
+
+#sigma_table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

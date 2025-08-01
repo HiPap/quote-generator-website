@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pro Motivational Quotes!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Generate Motivational Quotes</h1>
+    <p id="quote"></p>
+    <div style="position: fixed; bottom: 20px; width:100%; text-align: center;">
+        <p id="quote" style="font-size: 1.2em; font-weight: bold;"></p>
+    </div>
+    <button onclick=generating()>Generate!</button>
+    <script>
+        function generating(){
+            const quotes = [
+            "Believe you can and you're half way there - Theodore Roosevelt",
+            "The lion does not concern itself with the opinions of sheep. - Unknown",
+            "The lion does not turn around when the small dog barks - Unknown",
+            "It is easier to stay in shape then to get in shape - Hugh Jackman",
+            "Today is the architect of your tomorrow build wiht intention - Unknown",
+            "peak unemployment - me",
+            "Be so good they ignore you - Steve Martin",
+            "Failure is a bruise not a tattoo - Jon Sinclair",
+            "The lion does not bite but lets it crust",
+            "Everything is hard before it is easy",
+            "Believe in yourself you will be unstoppable",
+            "Choose to be optimistic it feels better - Dalai Lama",
+            "By failing to prepare, you are preparing to fail - Big Benji Franklin",
+            "The mind is everything. What you think you become - Buddha",
+            "With the new day comes new strength and new thoughts - Eleanor Rossevelt",
+            "You are never too old to set another goal or to dream a new dream. - C.S Lewis",
+            "It takes courage to grow up and become who you really are. - E.E Cummings",
+            "Your self-worth is determined by you. You don't have to depend on someone telling you who you are. - Beyonce",
+            "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And you are the guy who'll decide where to go - Dr.Seuss",
+            "Attitude is a little thing that makes a big difference - Churchill",
+            "To bring about change, you must not be afraid to take the first step. We will fail when we fail to try - Rosa Parks",
+            "All our dreams can come true, if we have the courage to pursue them - Walt Disney",
+            "I am lucky that whatever fear I have inside me, my desire to win is always stronger - Serena Williams",
+            "It is during our darkest moments that we must focus to see the light. - Aristotle",
+            "It always seems impossible until it's done. - Nelson Mandela",
+            "Dont count the days, make the days count. - Muhammad Ali",
+            "Failure is the condiment that gives success its flavor. - Truman Capote",
+            "Your story is what you have, what you will always have. It is something to own. - Michelle OBama",
+            "To live is the rarest thing in the world. Most people just exist. - Oscar Wilde",
+            "Love yourself first and everything else falls into line - Lucille Ball",
+            "There is no better compass than compassion - Unknown ",
+            "Those who are foolish enough to insult you at one's skill feel nothing but envy- black dude",
+            "ain't no party like a diddy party - LEBRON JAMES"
+            ];
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").textContent = quotes[randomIndex];
+             let storedQuotes = JSON.parse(localStorage.getItem("quoteHistory")) || [];
+            if (!storedQuotes.includes(quote)) {
+                storedQuotes.push(quote);
+                localStorage.setItem("quoteHistory", JSON.stringify(storedQuotes));
+        }
+    }
+    </script>
+    <button onclick="switch_screen()" id="ListButton">List</button>
+    <script>
+        function switch_screen(){
+            window.location.href = "listpage.html"
+        }
+    </script>
+</body>
+</html>
