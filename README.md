@@ -1,42 +1,45 @@
-#🌟 Quote Generator Website
-Welcome to my very first project using HTML, CSS, and JavaScript! This simple yet fun project displays random quotes to inspire and motivate, and it helped me understand the basics of web development.
+# 🌟 Quote Generator Website
 
-#🚀 Features
-Generates random inspirational quotes at the click of a button
+Welcome to my very first project using **HTML**, **CSS**, and **JavaScript**! This simple yet fun project displays random quotes to inspire and motivate, and it helped me understand the basics of web development.
 
-Clean and responsive UI
+## 🚀 Features
 
-Built using vanilla HTML, CSS, and JavaScript – no libraries or frameworks
+- Generates random inspirational quotes at the click of a button  
+- Clean and responsive UI  
+- Built using vanilla HTML, CSS, and JavaScript – no libraries or frameworks
 
-#🎯 Purpose
+## 🎯 Purpose
+
 This was my first hands-on experience with web development. The goal was to:
 
-Practice structuring content with HTML
+- Practice structuring content with HTML  
+- Style a simple layout using CSS  
+- Add interactivity with JavaScript
 
-Style a simple layout using CSS
+## 🛠️ Tech Stack
 
-Add interactivity with JavaScript
+- **HTML** – for the page structure  
+- **CSS** – for styling and layout  
+- **JavaScript** – for logic and interactivity
 
-#🛠️ Tech Stack
-HTML – for the page structure
+## 📸 Screenshot
 
-CSS – for styling and layout
+<!-- Replace with an actual screenshot if available -->
+![Screenshot of Quote Generator Website](screenshot.png)
 
-JavaScript – for logic and interactivity
+## 📂 How to Use
 
-#📸 Project
-(You can insert a screenshot of your project here to showcase how it looks)
+1. Clone or download the repository  
+2. Open `index.html` in your browser  
+3. Click the **"New Quote"** button to see a random quote appear!
 
-#📂 How to Use
-Clone or download the repository
+## 📌 Future Improvements
 
-Open index.html in your browser
+- Add animations or transitions  
+- Include more quotes or fetch them from an external API  
+- Add a “Copy to Clipboard” or “Share” feature  
+- Improve mobile responsiveness
 
-Click the "New Quote" button to see a random quote appear!
+---
 
-#📌 Future Improvements
-Add animations or transitions
-
-Include more quotes or fetch them from an external API
-
-Add a “Copy to Clipboard” or “Share” feature
+💡 *Thanks for checking out my first web project! More to come as I continue learning.*
